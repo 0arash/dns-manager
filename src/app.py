@@ -56,13 +56,13 @@ if __name__ == "__main__":
     # check for sudo permission
     if os.geteuid() == 0:
         argv = sys.argv
-        if argv[1] == '1':
+        if argv[1] == 'cloudflare':
             setCloudflareDns()
-        if argv[1] == '2':
+        if argv[1] == 'google':
             setGoogleDns()
-        if argv[1] == '3':
+        if argv[1] == '403':
             set403Dns()
-        elif argv[1] == '4':
+        elif argv[1] == 'default':
             defaultDns()
     else:
         print("[!] Please run the script with 'sudo'.\n")
