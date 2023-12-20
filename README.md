@@ -1,4 +1,4 @@
-# usage:
-sudo python app.py google
-or
-sudo python app.py cloudflare
+# usage:\n
+sudo python app.py google\n
+or\n
+sudo python app.py cloudflare\n
